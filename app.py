@@ -58,7 +58,7 @@ def deleteWish():
             _user = session.get('user')
 
             conn = mysql.connect()
-            cursor = conn.cursor()
+            cursor = conn.cursor():wq::;;
             cursor.callproc('sp_deleteWish', (_id, _user))
             result = cursor.fetchall()
 
